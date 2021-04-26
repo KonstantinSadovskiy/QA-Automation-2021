@@ -6,6 +6,7 @@ namespace HW2
     {
         static void Main(string[] args)
         {
+            //string test = "123215551356484";
             Console.WriteLine("Consecutive: " + Consecutive(args[0]));
             Console.WriteLine("NonConsecutive: " + NonConsecutive(args[0]));
         }
@@ -68,7 +69,7 @@ namespace HW2
 
                 tempArr = tempArr.Insert(0, str[(i - 1)..i]);
 
-                ResetIfCharEqual(ref str, ref tempArr, ref i, ref tempCount);
+                ResetIfCharEqual(ref str,ref tempArr, ref i, ref tempCount);
 
                 if (tempCount > maxCount)
                 {
